@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+body{
+    background-color: salmon;
+}
+
+.navigation-bar{
+   background-color: black;
+   height: 120px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: fixed;
+   top: 0;
+   z-index: 99;
+   width: 100%;
+   transform: translateX(1400px);
+   transition: transform 0.4s ease-in-out;
+   
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-items{
+    font-size: 30px;
+    letter-spacing: 1px;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    list-style: none;
+    font-weight: 600;
+    font-family: 'Pacifico', cursive;
+}
+
+.navigation-bar.show{
+    transform: translateX(0px);
+}
+
+.burger{
+    background: none;
+    color: white;
+    border: none;
+    font-size: 40px;
+    padding: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: fixed;
+    z-index: 99;
+    top: 15px;
+    right: 30px;
+}
+
+.main-container{
+    margin-top: 130px;
+    margin-bottom: 10px;
+}
+
+.block{
+    background-color: aqua;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    border: 2px solid black;
+}
+
+.inner-block1{
+    width: 20%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.square{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    
+}
+
+.invis-button{
+    margin-top: 10px;
+}
+
+.inner-block2{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+}
+
+.changing-square{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+
+.buttons{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    bottom: 10px;
+    
+}
+
+.colors{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.color-box{
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.form-table{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#show-table{
+    margin-top: 30px;
+    display: none;
+}
+
+table, th, td {
+    border:1px solid black;
+  }
